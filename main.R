@@ -21,4 +21,4 @@ p <- ggplot(filter(d, country %in% n$country, d$time > '2020-02-27'), aes(time, 
 
 p + labs(title = "Covid-19 in Baltics", y="confirmed cases")
 
-ggsave("myplot.png")
+ggsave("static/myplot.png")
