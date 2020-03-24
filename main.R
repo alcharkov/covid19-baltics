@@ -3,6 +3,7 @@
 # Created by: asc
 # Created on: 2020-03-24
 
+remotes::install_github("GuangchuangYu/nCov2019")
 require(nCov2019)
 require(dplyr)
 
