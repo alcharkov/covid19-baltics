@@ -13,7 +13,7 @@ require(ggrepel)
 x <- get_nCov2019(lang = 'en')
 y <- load_nCov2019()
 
-d <- y['global'] #extract global data
+d <- y['global']
 
 d <- d[d$country == 'Lithuania' | d$country == 'Latvia' | d$country == 'Estonia',]
     
