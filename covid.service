@@ -1,0 +1,12 @@
+[Unit]
+Description=covid
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5s
+ExecStart=/home/web/covid19-baltics-master/server
+WorkingDirectory=/home/web/covid19-baltics-master/server
+
+[Install]
+WantedBy=multi-user.target
