@@ -20,6 +20,6 @@ d <- d[d$country == 'Lithuania' | d$country == 'Latvia' | d$country == 'Estonia'
 n <- d %>% filter(time == time(y))
 p <- ggplot(filter(d, country %in% n$country, d$time > '2020-02-27'), aes(time, cum_confirm, color=country)) + geom_line() + theme_minimal(base_size=10)
 
-p + labs(title = "Covid-19 in Baltics (data fetched every 10min)", y="confirmed cases")
+p + labs(title = "Covid-2019 in Baltics (data fetched every 10min)", y="confirmed cases")
 
 ggsave("static/plot.png")
